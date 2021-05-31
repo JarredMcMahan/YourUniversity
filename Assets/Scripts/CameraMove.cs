@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,7 +19,5 @@ public class CameraMove : MonoBehaviour
         // Physically move object in direct using speed and direction.
         transform.Translate(0, 0, front);
         transform.Translate(side, 0, 0);
-
     }
-
 }

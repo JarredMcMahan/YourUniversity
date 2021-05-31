@@ -7,7 +7,7 @@ public class MouseLook : MonoBehaviour {
 
     Boolean Hold = false;
 
-    // This enumeration describes which directions this script should control
+    // Describes which directions this script should control
     [Flags] public enum RotationDirection {
         None, 
         Horizontal = (1 << 0), 
@@ -31,7 +31,6 @@ public class MouseLook : MonoBehaviour {
     private float inputLagTimer; // The time since the last received non-zero input value
 
     // When this component is enabled, we need to reset the state
-    // and figure out the current rotation
     private void OnEnable() {
         // Reset the state
         velocity = Vector2.zero;
